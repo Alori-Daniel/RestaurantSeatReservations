@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&family=Outfit:wght@100..900&display=swap');
+
+.navbar{
+    display: flex;
+    align-items: center;
+    /* border: 1px solid red; */
+    justify-content: space-around;
+    background-color: #234D33;
+    color: #FFFFFF;
+    padding: 1rem 3.5rem;
+}
+.navbar h2{
+    flex:1 ;
+    font-family: "Orelega One", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow:
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,   
+   -1px  1px 0 #000,   
+    1px  3px 3px #000;   
+}
+.ul-links{
+    flex: 1.4;
+}
+.navbar-ul{
+    display: flex;
+    gap: 2rem;
+}
+.navbar-ul li{
+    list-style: none;
+    font-family: "Outfit", sans-serif;
+    color: #FFFFFF;
+    position: relative;
+    cursor: pointer;
+}
+.navbar-ul li::before{
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 1px;
+    background-color: #F85A17;
+    transition: width 0.4s ease-in-out;
+}
+.navbar-ul li:hover::before{
+    width: 100%;
+}
+
+.button-booknow{
+    /* flex: 1; */
+    background-color: #F85A17;
+    position: relative;
+    padding: 0.8rem 0.7rem;
+    color: #FFFFFF;
+    font-family: "Outfit", sans-serif;
+    border-radius: 5px;
+    border: none;
+    max-width: 150px;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+    z-index: 0;
+    text-transform: uppercase;
+}  
+/* BUTTON ANIMATION */
+.btn-shine {
+overflow: hidden;
+position: relative;
+}
+.btn-shine::after {
+background: #FFFFFF;
+content: "";
+height: 155px;
+left: -75px;
+opacity: 0.9;
+position: absolute;
+top: -50px;
+transform: rotate(35deg);
+transition: all 550ms cubic-bezier(0.59, 1, 0.52, 1);
+width: 20px;
+z-index: -10;
+}
+
+.btn-shine:hover:after {
+left: 102%;
+transition: all 550ms cubic-bezier(0.59, 1, 0.52, 1);
+}
+.btn-shine::before{
+background: #FFFFFF;
+content: "";
+height: 155px;
+right: -75px;
+opacity: 0.9;
+position: absolute;
+top: -30px;
+transform: rotate(35deg);
+transition: all 550ms cubic-bezier(0.53, 1, 0.53, 1);
+width: 20px;
+z-index: -10;
+}
+.btn-shine:hover::before {
+right:  130%;
+transition: all 550ms cubic-bezier(0.59, 1, 0.52, 1);
+}
+.icons{
+    display: none;
+    font-size: 20px;
+}
+.nav_icon{
+    display: none;
+    font-size: 40px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.nav_icon:hover{
+    transform: rotate(180deg) scale(1.1);
+}
+
+/* BREAKPOINTS */
+/* For Medium Devices */
+@media screen and (max-width: 819px) {
+    .navbar-ul{
+        /* display: none; */
+        flex-direction: column;
+        position: fixed;
+        z-index: 20;
+        /* border: 1px solid red; */
+        top: 0;
+        right: -200px;
+        /* background-color: #234D33; */
+        width: 200px;
+        align-items: flex-start;
+        padding: 2rem 1rem;
+        height: 100vh;
+        transition: 0.3s;
+        background: rgba(35, 77, 51, 0.8); 
+        backdrop-filter: blur(10px); 
+    }
+    .navbar-ul.show{
+        right: 0;
+    }
+    .nav_icon{
+        display: block;
+    }
+    .icons{
+        display: block;
+    }
+    .button-booknow{
+        display: none;
+    }
+    .navbar{
+        justify-content: space-between;
+    }
+    .navbar h2{
+        flex: 2;
+    }
+}
