@@ -18,6 +18,11 @@
     /* max-width: 600px; */
     margin: 0 auto;
     text-align: center;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .hero-div h1{
     font-size: 96px;
@@ -49,4 +54,54 @@
     font-weight: 600;
     top: -1.8em; 
     transform: rotate(-25deg);
+}
+.btn-hero{
+    margin-top: 6rem;
+}
+
+/* BREAKPOINTS */
+/* For Medium Devices */
+@media screen and (max-width: 819px) {
+    .btn-hero{
+        margin-top: 2rem;
+        display:flex;
+        
+    }
+    .hero-div h1{
+        font-size: 80px;
+    }
+    .hero-div h3{
+        font-size: 20px;
+    }
+}
+
+/* SMALL SCREEN */
+@media screen and (max-width: 630px) {
+    .hero-div h1{
+        font-size: 60px;
+        /* padding-bottom: 0.5rem; */
+    }
+    .hero-div h3{
+        font-size: 15px;
+    }
+    .hero-div span{
+        top: -1em;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .hero-div h1{
+        font-size: 40px;
+        font-weight: 500;
+    }
+    .hero-div h3{
+        font-size: 13px;
+    }
+    .hero-div span{
+        top: -0.5em;
+        font-size: 25px;
+    }
+    .hero-div{
+        gap: 1rem;
+    }
 }
