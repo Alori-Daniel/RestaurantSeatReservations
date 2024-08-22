@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './navbar.css'
+import crisp from '../../assets/crisp.png'
 
 const Navbar = () => {
 
@@ -11,13 +12,16 @@ const Navbar = () => {
       };
   return (
     <div className='navbar'>
-      <h2>Crisp & Crave</h2>
+      <div className='logo'>
+        <img src={crisp} alt="" className='image-logo' />
+      <h2>Crisp <br /> & Crave</h2>
+      </div>
       <div className='ul-links'>
         <ul className={showNav ? 'navbar-ul show': 'navbar-ul'}>
         <i className='bx bx-x-circle icons' onClick={toggleNav}></i>
-            <li>Home</li>
+            <li> <a href="#home">Home </a></li>
             <li>Menu</li>
-            <li>About Us</li>
+            <li> <a href="#aboutUs"> About Us</a></li>
             <li>Contact Us</li>
             
         </ul>
