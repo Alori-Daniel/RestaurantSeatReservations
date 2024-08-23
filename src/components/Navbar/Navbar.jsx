@@ -1,7 +1,12 @@
 import React, { useState } from 'react'
 import './navbar.css'
+import crisp from '../../assets/crisp.png'
+import { useNavigate } from 'react-router-dom';
+
 
 const Navbar = () => {
+
+  const navigate = useNavigate();
 
     const [showNav, setShowNav] = useState(false);
 
@@ -11,14 +16,17 @@ const Navbar = () => {
       };
   return (
     <div className='navbar'>
-      <h2>Crisp & Crave</h2>
+      <div className='logo'>
+        <img src={crisp} alt="" className='image-logo' />
+      <h2>Crisp <br /> & Crave</h2>
+      </div>
       <div className='ul-links'>
         <ul className={showNav ? 'navbar-ul show': 'navbar-ul'}>
         <i className='bx bx-x-circle icons' onClick={toggleNav}></i>
-            <li>Home</li>
-            <li>Menu</li>
-            <li>About Us</li>
-            <li>Contact Us</li>
+            <li onClick={()=> navigate('/')}> <a href="#home">Home </a></li>
+            <li onClick={()=> {navigate('/menu'), window.scrollTo(0,0)}}>Menu</li>
+            <li onClick={()=> navigate('/')}> <a href="#aboutUs"> About Us</a></li>
+            <li> <a href="#contact">Contact Us</a></li>
             
         </ul>
         
