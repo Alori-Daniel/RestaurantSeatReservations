@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+  .features-container {
+    text-align: center;
+    margin-top: 5rem;
+    font-family: "Outfit", sans-serif;
+    background-color: #F3FAF5;
+  }
+  
+  *{
+    font-family: "Outfit", sans-serif;
+  }
+
+  .title {
+    margin-bottom: 3rem;
+    font-family: "Inter", sans-serif;
+  }
+  
+  .cards {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+    padding: 20px;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+  }
+  
+  .image {
+    height: 430px;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .image:hover {
+    transform: scale(0.95);
+    opacity: 0.9;
+  }
+  
+  .dish-title {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    text-align: left;
+    
+  }
+  
+  .description, .origin {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    font-family: "Outfit", sans-serif;
+    text-align: left;
+  }
+  
+/* Media query for tablets */
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+    margin-bottom: 2rem;
+  }
+
+  .image {
+    height: 300px;
+  }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .image {
+    height: 250px;
+  }
+
+  .dish-title {
+    font-size: 1.2rem;
+  }
+
+  .description, .origin {
+    font-size: 0.9rem;
+  }
+}

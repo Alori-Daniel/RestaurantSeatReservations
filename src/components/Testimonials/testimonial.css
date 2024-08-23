@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+  font-family: "Outfit", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.testimonials-container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically by default */
+  align-items: center; /* Center items horizontally */
+  justify-content: center;
+  margin: 40px 0;
+  gap: 20px;
+}
+
+.testimonial-card {
+  background-color: #004C3F;
+  color: white;
+  border-radius: 15px;
+  padding: 20px;
+  width: 90%; /* Set width to 90% of the container for responsive sizing */
+  max-width: 400px; /* Max width for larger screens */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between; /* Ensure content is spaced evenly */
+}
+
+.testimonial-text {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  flex-grow: 1; /* Allow the text to grow and take available space */
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center user info horizontally */
+  margin-top: 10px; /* Add some margin to separate from text */
+}
+
+.user-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.user-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.user-role {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.rating {
+  font-size: 1rem;
+  color: #FFB400;
+}
+
+.star {
+  margin-right: 2px;
+}
+
+/* Media query for iPad screens */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .testimonials-container {
+    flex-direction: row; /* Arrange items in a row for tablet screens */
+    gap: 20px; /* Adjust gap for tablet screens */
+    justify-content: space-evenly; /* Distribute space evenly among items */
+  }
+
+  .testimonial-card {
+    width: 45%; /* Set width to 45% for two-column layout */
+    height: auto; /* Auto height to accommodate content dynamically */
+    max-width: none; /* Remove max-width restriction for better layout */
+  }
+}
+
+/* Media query for larger screens (e.g., laptops) */
+@media screen and (min-width: 1024px) {
+  .testimonials-container {
+    flex-direction: row; /* Arrange items in a row for larger screens */
+    gap: 20px; /* Adjust gap for larger screens */
+  }
+
+  .testimonial-card {
+    width: 30%; /* Set width to 30% for three-column layout */
+    height: 300px; /* Set a fixed height for uniform size */
+  }
+}
+
+/* Media query for smaller screens (e.g., smartphones) */
+@media screen and (max-width: 767px) {
+  .testimonials-container {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+
+  .testimonial-card {
+    width: 90%; /* Set width to 90% for responsive sizing on smaller screens */
+    max-width: 400px; /* Max width for smaller screens */
+    height: auto; /* Auto height for dynamic content */
+  }
+}
