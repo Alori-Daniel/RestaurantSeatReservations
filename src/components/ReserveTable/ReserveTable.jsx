@@ -2,9 +2,11 @@ import React, { useState, useEffect } from 'react';
 import './reserve.css';
 import imageLarge from '../../assets/circleimg.png'; // Default image for large screens
 import imageSmall from '../../assets/smallcircle.png'; // Different image for smaller screens
+import { useNavigate } from 'react-router-dom';
 
 const ReserveTable = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     // Function to check screen size and set state
@@ -30,7 +32,7 @@ const ReserveTable = () => {
         <p className="description">
           Experience the vibrant flavors of Africa in a warm and welcoming atmosphere. Whether you're planning a special celebration or a casual meal with friends, reserving your table ensures you have a seat at the heart of our culinary journey. Choose your preferred time and date, and let us take care of the rest. We look forward to hosting you and making your dining experience truly unforgettable.
         </p>
-        <button className="reserve-button btn-shine">Book Your Table</button>
+        <button onClick={()=> navigate('/book')} className="reserve-button btn-shine">Book Your Table</button>
       </div>
       <div className="graphic-container">
         {/* Conditional rendering of images based on screen size */}

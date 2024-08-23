@@ -10,6 +10,7 @@ import Testimonials from './components/Testimonials/Testimonials'
 import AboutUs from './components/AboutUs/AboutUs'
 import Footer from './components/Footer/Footer'
 import Menu from './components/Menu/Menu';
+import BookTable from './components/BookTable/BookTable';
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
       </>
     }>
      </Route>
+     <Route path='/book' element={<BookTable />}></Route>
     
      </Routes>
      <Footer />
