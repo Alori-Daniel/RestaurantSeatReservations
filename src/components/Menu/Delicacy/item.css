@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Outfit&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+.item{
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    /* background-color: red; */
+}
+
+.item-div{
+    display: flex;
+    justify-content: space-between;
+}
+.item-div p:nth-child(1){
+    color: #ffffff;
+}
+.item-div p:nth-child(2){
+    color: #FB7D3C;
+}
+.starters{
+    display: flex;
+    flex-direction: column;
+    background-color: #234D33;
+    /* align-items: flex-start; */
+    align-items: center;
+    border: 1px solid red;
+    padding: 2rem 1rem;
+    gap: 2rem;
+    /* height: 600px; */
+
+}
+.courses{
+    background-color: #F3FAF5;
+}
+.starter-div{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+}
+.stat{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid yellow;
+    gap: 2rem;
+}
+.starter-text p{
+    font-family: "Libre Baskerville", serif;
+    color: #ffffff;
+    margin-top: 0.4rem;
+}
+.starter-text p:nth-child(1){
+    font-size: 29px;
+}
+.starter-text p:nth-child(2){
+    font-size: 20px;
+    font-family: "Outfit", serif;
+}
+.black-starter p:nth-child(1){
+    color: black !important;
+}
+.specials{
+    background-color: #9A2512;
+}
+@media screen and (max-width:740px) {
+    .starter-div{
+        align-items: center;
+        justify-content: center;
+    }
+    .starter-text{
+        text-align: center;
+    }
+}

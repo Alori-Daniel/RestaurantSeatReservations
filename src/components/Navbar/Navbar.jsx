@@ -1,8 +1,12 @@
 import React, { useState } from 'react'
 import './navbar.css'
 import crisp from '../../assets/crisp.png'
+import { useNavigate } from 'react-router-dom';
+
 
 const Navbar = () => {
+
+  const navigate = useNavigate();
 
     const [showNav, setShowNav] = useState(false);
 
@@ -19,10 +23,10 @@ const Navbar = () => {
       <div className='ul-links'>
         <ul className={showNav ? 'navbar-ul show': 'navbar-ul'}>
         <i className='bx bx-x-circle icons' onClick={toggleNav}></i>
-            <li> <a href="#home">Home </a></li>
-            <li>Menu</li>
-            <li> <a href="#aboutUs"> About Us</a></li>
-            <li>Contact Us</li>
+            <li onClick={()=> navigate('/')}> <a href="#home">Home </a></li>
+            <li onClick={()=> navigate('/menu')}>Menu</li>
+            <li onClick={()=> navigate('/')}> <a href="#aboutUs"> About Us</a></li>
+            <li> <a href="#contact">Contact Us</a></li>
             
         </ul>
         

@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&family=Outfit:wght@100..900&display=swap');
+
+.footer{
+    display: flex;
+    background: #67C187;
+    height: 400px;
+    align-items: center;
+    padding: 0.4rem 5rem;
+}
+.footer-left h2{
+    font-family: "Orelega One", serif;
+    color: #ffffff;
+    font-size: 54px;
+    font-weight: 400;
+}
+.footer-left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+}
+.footer-right{
+    background-color: #ffffff;
+    height: 300px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    /* gap: 2rem; */
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    /* margin-right: 2rem; */
+}
+.footer-left p{
+    font-family: "Outfit", serif;
+    margin-top: 0.4rem;
+}
+.footer-left p a{
+    color: black;
+}
+.footer-right-p p{
+    font-family: "Outfit", serif;
+    font-weight: 500;
+}
+.footer-right-div{
+    font-family: "Outfit", serif;
+    font-weight: 500;
+}
+.footer-right-div h1{
+    font-size: 40px;
+}
+.footer-icons{
+    margin-top: 1rem;
+    font-size: 30px;
+    display: flex;
+    gap: 1rem;
+    
+}
+.footer-icons i{
+    background-color: black;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 0.5rem 0.5rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.footer-icons i:hover{
+    background-color: #ffffff;
+    color: black;
+}
+
+@media screen and (max-width:900px) {
+    .footer{
+        /* flex-direction: column;
+        height: 100%; */
+        padding: 0.4rem 2rem;
+    }
+}
+@media screen and (max-width:670px) {
+    .footer{
+        flex-direction: column;
+        height: 100%;
+        gap: 0.7rem;
+    }
+    .footer-left{
+        width: 100%;
+    }
+    .footer-right{
+        width: 100%;
+    }
+}

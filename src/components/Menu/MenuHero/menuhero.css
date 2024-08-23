@@ -1,0 +1,8 @@
+.menuhero{
+    margin-top: 85px;
+    background-image: url("../../../assets/menuhero.png");
+    background-size: cover;
+    height: 900px;
+    /* background-position: center ; */
+    width: 100%;
+}
