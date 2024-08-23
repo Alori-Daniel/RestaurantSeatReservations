@@ -15,7 +15,7 @@ const MainCourses = () => {
         <div className='starter-div black-starter' >
       {meals.map((prod,i)=>{
         if (prod.category === "courses"){
-            return<Items key={i} img={prod.image} name={prod.name} price={prod.price} />
+            return<Items key={i} img={prod.image} name={prod.name} price={prod.price} description={prod.description} />
         }
       })}
       </div>

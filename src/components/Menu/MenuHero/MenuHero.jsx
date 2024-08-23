@@ -4,8 +4,11 @@ import './menuhero.css'
 const MenuHero = () => {
   return (
     <div className='menuhero'>
-      Hello
-      
+        <div>
+      <h1>Explore Our Flavors</h1>
+      <p>Discover the rich culinary traditions of Africa <br />through our carefully crafted menu</p>
+      </div>
+
     </div>
   )
 }

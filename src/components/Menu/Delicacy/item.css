@@ -6,7 +6,52 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    /* background-color: red; */
+}
+.image-container img{
+    width: 100%;
+}
+.shadow-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    opacity: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0));
+    transition: opacity 0.3s ease;
+    pointer-events: none; 
+  }
+  
+  .image-container:hover .shadow-overlay {
+    opacity: 1; 
+  }
+.image-container{
+    position: relative;
+    /* border: 1px solid red; */
+    overflow: hidden;
+}
+.info-section{
+    position: absolute;
+  bottom: -100%; 
+  left: 0;
+  width: 100%;
+  background-image: url("../../../assets/imageHover.png");
+  background-size: cover;
+  color: white;
+  padding: 0.2rem 1rem ;
+  box-sizing: border-box;
+  text-align: center;
+  transition: bottom 0.3s ease-in-out; 
+}
+.info-section p{
+    padding: 1rem 0;
+    color: black;
+    font-family: "Outfit", serif;
+    text-align: left;
+}
+.image-container:hover .info-section{
+    bottom: 0;
 }
 
 .item-div{
@@ -14,21 +59,22 @@
     justify-content: space-between;
 }
 .item-div p:nth-child(1){
+    font-size: 18px;
     color: #ffffff;
+    letter-spacing: 1px;
 }
 .item-div p:nth-child(2){
+    font-size: 18px;
     color: #FB7D3C;
+    font-weight: 500;
 }
 .starters{
     display: flex;
     flex-direction: column;
     background-color: #234D33;
-    /* align-items: flex-start; */
     align-items: center;
-    border: 1px solid red;
     padding: 2rem 1rem;
     gap: 2rem;
-    /* height: 600px; */
 
 }
 .courses{
@@ -43,7 +89,7 @@
 .stat{
     display: flex;
     flex-direction: column;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     gap: 2rem;
 }
 .starter-text p{

@@ -24,7 +24,7 @@ const Navbar = () => {
         <ul className={showNav ? 'navbar-ul show': 'navbar-ul'}>
         <i className='bx bx-x-circle icons' onClick={toggleNav}></i>
             <li onClick={()=> navigate('/')}> <a href="#home">Home </a></li>
-            <li onClick={()=> navigate('/menu')}>Menu</li>
+            <li onClick={()=> {navigate('/menu'), window.scrollTo(0,0)}}>Menu</li>
             <li onClick={()=> navigate('/')}> <a href="#aboutUs"> About Us</a></li>
             <li> <a href="#contact">Contact Us</a></li>
             

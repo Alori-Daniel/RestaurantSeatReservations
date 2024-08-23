@@ -1,8 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
 .menuhero{
     margin-top: 85px;
     background-image: url("../../../assets/menuhero.png");
     background-size: cover;
     height: 900px;
-    /* background-position: center ; */
+    background-position: center ;
     width: 100%;
+    padding: 10rem 6rem;
+   
+}
+.menuhero h1,p{
+    font-family: "Libre Baskerville", serif;
+
+}
+.menuhero h1{
+    font-size: 66px;
+    font-weight: 500;
+}
+.menuhero p{
+    font-size: 20px;
+}
+@media screen and (max-width:700px) {
+    .menuhero{
+        display: flex;
+        padding: 6rem 1rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .menuhero h1{
+        font-size: 55px;
+    }
 }
