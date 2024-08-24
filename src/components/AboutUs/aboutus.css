@@ -57,8 +57,12 @@
 }
 .p-aboutUs{
     position: absolute;
+    text-align: justify;
     bottom: 5%;
     left: -10%;
+}
+.left-content p{
+    text-align: justify;
 }
 .aboutus-div p{
     font-family: "Outfit", sans-serif ;
@@ -83,9 +87,9 @@
     .aboutus-div p{
         max-width: 600px;
     }
-    .right-content{
-        /* width: 100%; */
-    }
+    /* .right-content{
+        width: 100%;
+    } */
     .p-aboutUs{
         position: relative;
         margin-top: 10rem;
@@ -106,9 +110,9 @@
     }
 }
 @media screen and (max-width:620px){
-    .aboutus-div p{
-        /* max-width: 400px; */
-    }
+    /* .aboutus-div p{
+        max-width: 400px;
+    } */
     .left-content{
         width: 100%;
     }

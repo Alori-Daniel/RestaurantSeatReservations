@@ -98,6 +98,7 @@
     font-family: "Libre Baskerville", serif;
     color: #ffffff;
     margin-top: 0.4rem;
+    text-align: left;
 }
 .starter-text p:nth-child(1){
     font-size: 29px;
