@@ -5,7 +5,7 @@ import './item.css'
 
 const Vegetarian = () => {
   return (
-    <div  className='starters'>
+    <div  className='starters' >
         <div className='stat'>
         <div className='starter-text' >
             <p>Vegetarian Dishes</p>

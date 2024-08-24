@@ -1,9 +1,12 @@
 import React from 'react'
+import BookTableHero from './BookTableComponents/BookTableHero'
+import TableSelection from './BookTableComponents/TableSelection'
 
 const BookTable = () => {
   return (
-    <div>
-      
+    <div className='book-table'>
+      <BookTableHero />
+      <TableSelection />
     </div>
   )
 }

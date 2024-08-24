@@ -72,7 +72,7 @@
     display: flex;
     flex-direction: column;
     background-color: #234D33;
-    align-items: center;
+    /* align-items: center; */
     padding: 2rem 1rem;
     gap: 2rem;
 
@@ -90,6 +90,8 @@
     display: flex;
     flex-direction: column;
     /* border: 1px solid yellow; */
+    max-width: 1100px;
+    margin-left: 9rem;
     gap: 2rem;
 }
 .starter-text p{
@@ -110,6 +112,16 @@
 .specials{
     background-color: #9A2512;
 }
+@media screen and (max-width:1259px) {
+    .stat{
+        margin-left: 5rem;
+    }
+}
+@media screen and (max-width:854px) {
+    .stat{
+        margin-left: 3rem;
+    }
+}
 @media screen and (max-width:740px) {
     .starter-div{
         align-items: center;
@@ -117,5 +129,8 @@
     }
     .starter-text{
         text-align: center;
+    }
+    .stat{
+        margin-left: 0.6rem;
     }
 }
