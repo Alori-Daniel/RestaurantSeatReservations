@@ -196,19 +196,43 @@ const TableSelection = () => {
                       </div>
                   </div>
               </div>
-              {isAnySeatPicked && <button className='tablebook-btn btn-shine' onClick={()=>setTableSelected(true)}>BOOK A TABLE</button>}
+              {isAnySeatPicked && <button className='tablebook-btn btn-shine' onClick={()=>{setTableSelected(true), window.scroll(0,0)}}>BOOK A TABLE</button>}
           </div>
             
           </div>
         ): (
             <div className="tableselection">
-                <div className="tableselection-container">
-                    <div className='tableselection-heading'>
+                <div className='tableselection-heading'>
                         <h2>INFORMATION DETAILS</h2>
-                        <p>Fill in the necessary information below</p>
+                        <p>Fill in the necessary information below and proceed to reserve Seat.</p>
                     </div>
+                <div className="fillinformation-container">
+                    
                     <div className='table-information'>
-
+                        <label htmlFor="name">Name
+                            <input type="text" name='name' placeholder='Brenda James' />
+                        </label>
+                        <label htmlFor="name">Email
+                            <input type="email" name='name' placeholder='brendajames@gmail.com'/>
+                        </label>
+                        <label htmlFor="number">Phone Number
+                            <input type="text" name='number' placeholder='09087652633' />
+                        </label>
+                        <div className='date-time'>
+                            <label htmlFor="date">Date to Come
+                                <input type="date"  name='date'/>
+                            </label>
+                            <label htmlFor="time">Time to Come
+                                <input type="time" name='time' />
+                            </label>
+                        </div>
+                        <label htmlFor="guest">No of Guest
+                            <input type="number" name='guest' placeholder='How many will attend' />
+                        </label>
+                        <label htmlFor="special">Special Requests
+                            <textarea type="textarea" name='special' />
+                        </label>
+                        <button className='reserve-btn btn-shine'>Reserve Now</button>
                     </div>
                 </div>
             </div>
