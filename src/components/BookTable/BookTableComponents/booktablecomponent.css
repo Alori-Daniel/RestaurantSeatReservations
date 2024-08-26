@@ -31,7 +31,7 @@
 .tableselection{
     width: 100%;
     padding: 4rem 0;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     background-color: #FFFFFF;
 }
 .fillinformation-container{
@@ -225,7 +225,83 @@
 
 
 
-@media screen and (max-width:1206px) {
+
+
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+
+  }
+  
+  .modal-content {
+    background: #FFFFFF;
+    padding: 3rem;
+    border-radius: 5px;
+  }
+  
+  .close {
+    cursor: pointer;
+    float: right;
+    font-size: 28px;
+  }
+  
+  .modal-info{
+    /* border: 1px solid red    ; */
+    width: 500px;
+  }
+  .modal-info h2{
+    text-align: center;
+    font-family: "Outfit", serif;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  .p-modal{
+    text-align: center;
+    font-family: "Outfit", serif;
+    color: #B0B0B0;
+    margin-bottom: 0.9rem;
+  }
+  .customer-details{
+    background-color: #F3FAF5;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    border-radius: 10px;
+  }
+  .customer-details .detail{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 0.5rem 0;
+  }
+  .customer-details .detail div{
+    display: flex;
+    /* gap: 10rem; */
+    justify-content: space-between;
+  }
+  .customer-details .detail div p:nth-child(1){
+    color: #B0B0B0;
+  } 
+  .img-logo2{
+    font-size: 5px;
+  }
+  .logo h3{
+    font-family: "Outfit", serif;
+    color: #234D33;
+    font-weight: 500;
+  }
+
+  @media screen and (max-width:1206px) {
     .table-container{
         transform: rotate(90deg);
         /* transform-origin: bottom right; */
@@ -285,6 +361,18 @@
     
     
 }
+@media screen and (max-width:639px) {
+    .modal-info{
+        /* border: 1px solid red; */
+        width: 400px;
+      }
+      .modal-content {
+        padding: 1rem;
+      }
+      .customer-details{
+        padding: 1rem;
+      }
+}
 
 @media screen and (max-width:570px) {
     .booktablehero{
@@ -325,6 +413,9 @@
     .date-time label>input{
         width: 130px;
     }
+    .modal-info{
+        width: 320px;
+      }
         
 }
 @media screen and (max-width:380px) {

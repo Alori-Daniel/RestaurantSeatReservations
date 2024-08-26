@@ -1,5 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
+import Modal from './Modal';
+import crisp from '../../../assets/crisp-green.png'
 
 const TableSelection = () => {
     const [tableSelected, setTableSelected]= useState(false)
@@ -25,7 +27,8 @@ const TableSelection = () => {
         19: false,
         20: false
       });
-      
+      const [isModalOpen, setModalOpen] = useState(false);
+
       const toggleSeat = (seatNumber) => {
         setSeatsPicked(prev => ({
           ...prev,
@@ -33,6 +36,111 @@ const TableSelection = () => {
         }));
       };
       const isAnySeatPicked = Object.values(seatsPicked).some(value => value === true);
+      const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        number: '',
+        date: '',
+        time: '',
+        noOfGuest: '',
+        special: ''
+      });
+    
+      const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData(prevState => ({
+          ...prevState,
+          [name]: value
+        }));
+      };
+    
+      const handleSubmit = (e) => {
+        e.preventDefault();
+        if(Object.values(formData).some(value => value === "")){
+            alert("Fill all inputs")
+        }else{
+            setModalOpen(true); 
+        }
+        
+      };
+    
+      const handleCloseModal = () => {
+        setFormData({
+            name: '',
+            email: '',
+            number: '',
+            date: '',
+            time: '',
+            noOfGuest: '',
+            special: ''
+          });
+        setModalOpen(false); 
+      };
+    
+      const renderModalContent = () => {
+        return (
+          <div className='modal-info'>
+            
+            <h2>Reservation Summary</h2>
+            <p className='p-modal'>check the summary to review your reservation details</p>
+            <div className='customer-details'>
+                    <div className='logo'>
+                        <img src={crisp} alt="" className='image-logo' />
+                        <h3 >Crisp <br /> & Crave</h3>
+                     </div>
+            <div className='detail'>
+                 <div> 
+                    <p>Name </p>
+                    <p>{formData.name}</p>
+                </div>
+            <hr />
+            </div>
+            <div className='detail' >
+                <div> 
+                    <p>Email </p>
+                    <p>{formData.email}</p>
+                </div>
+            <hr />
+            </div>  
+            <div className='detail'>
+                <div>
+                    <p>Phone Number</p>
+                    <p>{formData.number}</p>
+                </div>
+            <hr />
+            </div>
+            <div className='detail'>
+                <div>
+                    <p>Date</p>
+                    <p>{formData.date}</p>
+                </div>
+            <hr />
+            </div>
+            <div className='detail'>
+                <div>
+                    <p>Time</p>
+                    <p>{formData.time}</p>
+                </div>
+            <hr />
+            </div>
+            <div className='detail'>
+                <div>
+                    <p>Number of Guests</p>
+                    <p>{formData.noOfGuest}</p>
+                </div>
+            <hr />
+            </div>
+            <div className='detail'>
+                <div>
+                    <p>Special Requests</p>
+                    <p>{formData.special}</p>
+                </div>
+            <hr />
+            </div>
+            </div>
+          </div>
+        );
+      };
   return (
     <>
         {!tableSelected ? (
@@ -208,32 +316,34 @@ const TableSelection = () => {
                     </div>
                 <div className="fillinformation-container">
                     
-                    <div className='table-information'>
-                        <label htmlFor="name">Name
-                            <input type="text" name='name' placeholder='Brenda James' />
+                <form className='table-information' onSubmit={handleSubmit}>
+                    <label htmlFor="name">Name
+                        <input type="text" name='name' placeholder='Brenda James' value={formData.name} onChange={handleChange} />
+                    </label>
+                    <label htmlFor="email">Email
+                        <input type="email" name='email' placeholder='brendajames@gmail.com' value={formData.email} onChange={handleChange} />
+                    </label>
+                    <label htmlFor="number">Phone Number
+                        <input type="text" name='number' placeholder='09087652633' value={formData.number} onChange={handleChange} />
+                    </label>
+                    <div className='date-time'>
+                        <label htmlFor="date">Date to Come
+                        <input type="date" name='date' value={formData.date} onChange={handleChange} />
                         </label>
-                        <label htmlFor="name">Email
-                            <input type="email" name='name' placeholder='brendajames@gmail.com'/>
+                        <label htmlFor="time">Time to Come
+                        <input type="time" name='time' value={formData.time} onChange={handleChange} />
                         </label>
-                        <label htmlFor="number">Phone Number
-                            <input type="text" name='number' placeholder='09087652633' />
-                        </label>
-                        <div className='date-time'>
-                            <label htmlFor="date">Date to Come
-                                <input type="date"  name='date'/>
-                            </label>
-                            <label htmlFor="time">Time to Come
-                                <input type="time" name='time' />
-                            </label>
-                        </div>
-                        <label htmlFor="guest">No of Guest
-                            <input type="number" name='guest' placeholder='How many will attend' />
-                        </label>
-                        <label htmlFor="special">Special Requests
-                            <textarea type="textarea" name='special' />
-                        </label>
-                        <button className='reserve-btn btn-shine'>Reserve Now</button>
                     </div>
+                    <label htmlFor="noOfGuest">No of Guest
+                        <input type="number" name='noOfGuest' placeholder='How many will attend' value={formData.noOfGuest} onChange={handleChange} />
+                    </label>
+                    <label htmlFor="special">Special Requests
+                        <textarea name='special' value={formData.special} onChange={handleChange} />
+                    </label>
+                        <button className='reserve-btn btn-shine'>Reserve Now</button>
+                        <Modal isOpen={isModalOpen} onClose={handleCloseModal} content={renderModalContent()} />
+
+                    </form>
                 </div>
             </div>
         )}
