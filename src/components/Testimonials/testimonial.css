@@ -26,27 +26,27 @@ body {
   color: white;
   border-radius: 15px;
   padding: 20px;
-  width: 90%; /* Set width to 90% of the container for responsive sizing */
-  max-width: 400px; /* Max width for larger screens */
+  width: 90%; 
+  max-width: 400px; 
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  justify-content: space-between; /* Ensure content is spaced evenly */
+  justify-content: space-between; 
 }
 
 .testimonial-text {
   font-size: 1rem;
   margin-bottom: 20px;
-  flex-grow: 1; /* Allow the text to grow and take available space */
+  flex-grow: 1; 
 }
 
 .user-info {
   display: flex;
   align-items: center;
-  justify-content: center; /* Center user info horizontally */
-  margin-top: 10px; /* Add some margin to separate from text */
+  justify-content: center; 
+  margin-top: 10px; 
 }
 
 .user-image {
@@ -78,40 +78,50 @@ body {
 /* Media query for iPad screens */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .testimonials-container {
-    flex-direction: row; /* Arrange items in a row for tablet screens */
-    gap: 20px; /* Adjust gap for tablet screens */
-    justify-content: space-evenly; /* Distribute space evenly among items */
+    flex-direction: row; 
+    gap: 20px; 
+    justify-content: space-evenly; 
   }
 
   .testimonial-card {
-    width: 45%; /* Set width to 45% for two-column layout */
-    height: auto; /* Auto height to accommodate content dynamically */
-    max-width: none; /* Remove max-width restriction for better layout */
+    width: 45%; 
+    height: auto; 
+    max-width: none; 
   }
+
+  .highlighted {
+    border: 2px solid gold; 
+    background-color: #f9f9f9;
 }
 
-/* Media query for larger screens (e.g., laptops) */
+.user-image-highlighted {
+  border: 2px solid gold; 
+  transform: scale(1.1); 
+}
+
+}
+
 @media screen and (min-width: 1024px) {
   .testimonials-container {
-    flex-direction: row; /* Arrange items in a row for larger screens */
-    gap: 20px; /* Adjust gap for larger screens */
+    flex-direction: row; 
+    gap: 20px; 
   }
 
   .testimonial-card {
-    width: 30%; /* Set width to 30% for three-column layout */
-    height: 300px; /* Set a fixed height for uniform size */
+    width: 30%; 
+    height: 350px; 
   }
 }
 
-/* Media query for smaller screens (e.g., smartphones) */
+
 @media screen and (max-width: 767px) {
   .testimonials-container {
-    flex-direction: column; /* Stack items vertically on smaller screens */
+    flex-direction: column; 
   }
 
   .testimonial-card {
-    width: 90%; /* Set width to 90% for responsive sizing on smaller screens */
-    max-width: 400px; /* Max width for smaller screens */
-    height: auto; /* Auto height for dynamic content */
+    width: 90%; 
+    max-width: 400px;
+    height: auto; 
   }
 }

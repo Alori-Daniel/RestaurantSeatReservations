@@ -1,0 +1,126 @@
+.community-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px; 
+    background: linear-gradient(to right, #78c2ad, #78c2ad); 
+    height: 600px;
+    margin-top: 7rem;
+    position: relative;
+    overflow: hidden;
+    flex-wrap: wrap; 
+  }
+  
+  .text-content {
+    max-width: 50%;
+    color: white;
+    margin-left: 2rem;
+    position: relative;
+    box-sizing: border-box; 
+  }
+  
+  .community-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .community-description {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  pre {
+    display: inline; 
+  }
+  
+  .image-background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    height: auto;
+    z-index: 0;
+  }
+  
+  .background-image {
+    /* opacity: 0.5; */
+    display: none;
+    z-index: 0;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .image-content {
+    max-width: 45%;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .community-image {
+    width: 75%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .image-background {
+        display: none; 
+      }
+
+      .community-image{
+        margin-left: 24rem;
+        margin-top: -4rem;
+      }
+  }
+
+  @media (max-width: 768px) {
+    .community-section {
+      display: flex;
+      flex-direction: column;
+      height: 100vh; 
+    }
+  
+    .text-content {
+      width: 100%;
+      margin-left: 0;
+      padding: 0 1rem;
+      text-align: left;
+    }
+  
+    .image-content {
+      max-width: 100%;
+      margin-top: 1rem;
+    }
+  
+    .community-title {
+      font-size: 1.5rem;
+    }
+  
+    .image-background {
+      display: none; 
+    }
+  
+    .community-description {
+      font-size: 0.875rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .community-title {
+      font-size: 1.2rem;
+    }
+  
+    .community-description {
+      font-size: 0.75rem;
+    }
+  
+    .community-image {
+      width: 100%;
+    }
+  }
+  
