@@ -4,6 +4,7 @@
   background-color: white; 
   text-align: center; 
   box-sizing: border-box; 
+  border: 1px solid red;
 }
 
 .top-image,
@@ -25,7 +26,7 @@
   width: 280px; 
   border-radius: 10px;
   object-fit: cover;
-  margin-left: 35rem; 
+  margin-left: 59rem; 
   margin-top: -1rem;
 }
 
@@ -50,17 +51,26 @@
   text-align: left;
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 1111px) and (max-width: 1247px){
+.bottom-image{
+  margin-left: auto;
+  /* border: 2px solid blue; */
+}
+
+}
+
+@media (min-width: 768px) and (max-width: 1113px) {
   .bottom-image img{
-    margin-left: 25rem;
+    margin-left: auto;
     margin-top: 5px;
+    
   }
 }
 
 @media (max-width: 768px) {
   .our-mission-container {
     padding: 20px;
-    width: 100vw;
+    width: 100%;
     /* border: 2px solid red; */
   }
 

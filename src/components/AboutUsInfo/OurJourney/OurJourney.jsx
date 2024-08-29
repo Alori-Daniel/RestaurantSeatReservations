@@ -5,6 +5,7 @@ import leafImage from '../../../assets/journeyleaf.png';
 
 const OurJourney = () => {
   return (
+    
     <div className="our-journey-container">
       <img src={leafImage} alt="Decorative Leaf" className="leaf-decor" />
       <div className="content">
@@ -19,6 +20,7 @@ const OurJourney = () => {
         </div>
       </div>
     </div>
+    
   );
 };
 

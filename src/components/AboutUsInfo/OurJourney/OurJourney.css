@@ -6,32 +6,35 @@
   padding: 40px 20px;
   position: relative; /* To position the leaf image */
   background-color: #F3FAF5;
-  width: 64rem;
+  width: 100%;
   /* max-width: 1200px; */
   /* margin: 0 auto; */
-  margin-top: 6rem;
+  margin-top: 7rem;
+  /* border: 2px solid yellow; */
+
 }
 
 .leaf-decor {
   position: absolute;
-  top: -5rem;
+  top: -7rem;
   left: 0;
   width: 400px;
   height: auto;
+  /* border: 2px solid blue; */
 }
 
 .content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 50px;
+  /* gap: 10px; */
   width: 100%;
 }
 
 .text-section {
   flex: 1;
   text-align: left;
-  margin-left: 3.5rem;
+  margin-left: 4.5rem;
 }
 
 .section-title {
@@ -45,6 +48,7 @@
   font-size: 16px;
   line-height: 1.6;
   color: #555;
+  max-width: 70%;
 }
 
 .image-section {
@@ -62,12 +66,14 @@
 }
 
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 767px) and (max-width: 1024px) {
 
   .our-journey-container{
-    /* border: 2px solid blue; */
+    border: 2px solid blue;
     width: 100vw;
     margin-top: 6rem;
+    display: flex;
+    /* flex-direction: column; */
   }
   .leaf-decor {
     width: 150px; 
@@ -81,10 +87,18 @@
   .section-text {
     font-size: 0.9rem;
     line-height: 1.4;
+    max-width: 200px;
   }
 
   .journey-image {
-    max-width: 200px; 
+    max-width: 200px;
+    margin-top: 50rem; 
+  }
+
+  .text-section{
+    max-width: 100%;
+    
+    border: 2px solid red;
   }
 
 }

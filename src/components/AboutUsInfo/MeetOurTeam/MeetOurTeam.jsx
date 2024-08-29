@@ -20,9 +20,9 @@ const MeetOurTeam = () => {
           <img src={teamMember3} alt="Team Member 3" className="team-member-image" />
         </div>
       </div>
-        <div className="vine-decor">
+      
         <img src={vines} alt="Green vines" className="vine-image" />
-        </div>
+        
     </div>
   );
 };
