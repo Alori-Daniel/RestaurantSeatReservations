@@ -12,13 +12,13 @@
   padding: 40px;
   margin: 40px 0;
   font-family: "Outfit", sans-serif;
-  position: relative; /* Allows absolute positioning of child elements */
+  position: relative; 
 }
 
 .text-container {
   color: white;
   max-width: 60%;
-  z-index: 2; /* Ensures the text content stays above any other elements */
+  z-index: 2; 
 }
 
 .reserve-title {
@@ -29,6 +29,7 @@
 .subtitle {
   font-size: 1.5rem;
   margin-bottom: 1rem;
+  color: black;
 }
 
 .description {
@@ -44,12 +45,13 @@
   border-radius: 5px;
   cursor: pointer;
   font-size: 1rem;
+  margin-top: 20px;
 }
 
 .btn-shine {
   overflow: hidden;
   position: relative;
-  z-index: 2; /* Ensures the button stays above any other elements */
+  z-index: 2; 
 }
 
 .btn-shine::after, .btn-shine::before {
@@ -92,21 +94,21 @@
 
 .circle {
   position: absolute;
-  width: 100%; /* Make sure it fills its container */
+  width: 100%; 
   height: auto;
-  max-width: 300px; /* Adjust to size you want */
+  max-width: 300px; 
   border-radius: 50%;
   right: 0;
-  top: calc(100% + 20px); /* Position below the button */
+  top: calc(100% + 0px); 
   transform: translateY(-50%); /* Center vertically if needed */
   z-index: 1; /* Ensures it stays behind the button and text */
 }
 
 .circle img {
-  max-width: 200%;
+  max-width: 110%;
   height: auto;
   display: block;
-  margin-left: -6rem;
+  margin-left: 4rem;
 }
 
 @media screen and (max-width: 768px) {

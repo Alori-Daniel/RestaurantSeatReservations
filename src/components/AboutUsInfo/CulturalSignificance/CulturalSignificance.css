@@ -1,0 +1,42 @@
+
+  body{
+    background-color: #ffff;
+  }
+  .title-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-bottom: 20px;
+     */
+     margin-top: 8rem;
+  }
+  
+  .decorative-icon {
+    width: 400px; 
+    margin: 0 10px;
+    /* mar  */
+
+  }
+  
+
+  
+  .description {
+    margin-top: 5rem;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    max-width: 600px;
+    margin: 0 auto; 
+    padding-top: 2rem;
+    text-align: center;
+  }
+  
+  @media (max-width: 767px) {
+    .decorative-icon {
+        width: 300px; 
+        margin: 0 10px;
+        /* mar  */
+    
+   }
+}
+  

@@ -35,7 +35,7 @@ const Testimonials = () => {
         <div className="testimonial-card" key={index}>
           <p className="testimonial-text">“{testimonial.text}”</p>
           <div className="user-info">
-            <img src={testimonial.image} alt={testimonial.name} className="user-image" />
+            <img src={testimonial.image} alt={testimonial.name} className={`user-image ${index === 2 ? 'user-image-highlighted' : ''}`} />
             <div>
               <p className="user-name">{testimonial.name}</p>
               <p className="user-role">{testimonial.role}</p>

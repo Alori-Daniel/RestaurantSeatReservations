@@ -35,7 +35,7 @@ const ReserveTable = () => {
         <button onClick={()=>{ navigate('/book'), window.scroll(0,0)}} className="reserve-button btn-shine">Book Your Table</button>
       </div>
       <div className="graphic-container">
-        {/* Conditional rendering of images based on screen size */}
+      
         <div className="circle">
           <img src={isSmallScreen ? imageSmall : imageLarge} alt="Reserve Table" />
         </div>
