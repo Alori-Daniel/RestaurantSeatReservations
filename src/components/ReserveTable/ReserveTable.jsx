@@ -11,13 +11,13 @@ const ReserveTable = () => {
   useEffect(() => {
     // Function to check screen size and set state
     const checkScreenSize = () => {
-      setIsSmallScreen(window.innerWidth <= 768); // Change breakpoint as needed
+      setIsSmallScreen(window.innerWidth <= 770); // Change breakpoint as needed
     };
 
     // Initial check
     checkScreenSize();
 
-    // Add event listener to listen for window resize
+    
     window.addEventListener('resize', checkScreenSize);
 
     // Clean up event listener on component unmount

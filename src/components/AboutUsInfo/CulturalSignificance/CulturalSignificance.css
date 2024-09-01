@@ -6,16 +6,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* margin-bottom: 20px;
-     */
      margin-top: 8rem;
   }
   
   .decorative-icon {
     width: 400px; 
     margin: 0 10px;
-    /* mar  */
-
   }
   
 
@@ -31,12 +27,15 @@
     text-align: center;
   }
   
-  @media (max-width: 767px) {
-    .decorative-icon {
-        width: 300px; 
-        margin: 0 10px;
-        /* mar  */
-    
-   }
+  @media  (max-width: 482px){
+
+  }
+.decorative-icon{
+  width: 15rem;
 }
-  
+
+  @media (min-width: 483px) and (max-width: 609px) {
+body{
+  margin-top: 4rem;
+}
+  }

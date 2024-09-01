@@ -66,43 +66,102 @@
 }
 
 
-@media (min-width: 767px) and (max-width: 1024px) {
+@media (min-width: 483px) and (max-width: 900px) {
 
   .our-journey-container{
-    border: 2px solid blue;
     width: 100vw;
-    margin-top: 6rem;
+    margin-top: 7rem;
     display: flex;
-    /* flex-direction: column; */
   }
   .leaf-decor {
-    width: 150px; 
     left: -1rem;
   }
 
   .section-title {
     font-size: 1.5rem;
+    margin-top: 2rem;
   }
 
   .section-text {
     font-size: 0.9rem;
-    line-height: 1.4;
-    max-width: 200px;
-  }
+    line-height: 1.5;
+    max-width: 100%;
+    margin-left: -3rem;
 
-  .journey-image {
-    max-width: 200px;
-    margin-top: 50rem; 
+    
   }
 
   .text-section{
     max-width: 100%;
-    
-    border: 2px solid red;
+  
+  }
+
+  .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .journey-image{
+    margin-top: 1rem;
+    height: 300px;
+    width: 350px;
   }
 
 }
-@media (max-width: 768px) {
+
+
+
+
+@media (min-width: 901px) and (max-width: 1179px) {
+
+}
+
+
+
+
+@media  (max-width: 482px){
+  .section-title {
+    margin-top: 3rem;
+    font-size: 1.5rem;
+  }
+
+  .section-text {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    max-width: 100%;
+    margin-left: -3rem;
+
+    
+  }
+
+  .text-section{
+    max-width: 100%;
+  
+  }
+
+  .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .journey-image{
+    margin-top: 1rem;
+    height: 300px;
+    width: 350px;
+  }
+
+  .leaf-decor{
+ 
+    width: 15rem;
+  }
+
+
+}
+
+
+/* @media (max-width: 768px) {
   .content {
     flex-direction: column; 
     text-align: center;
@@ -153,4 +212,4 @@
   .journey-image {
     max-width: 200px; 
   }
-}
+} */
