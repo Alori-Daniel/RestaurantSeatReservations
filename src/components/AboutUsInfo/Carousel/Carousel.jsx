@@ -18,7 +18,7 @@ const Carousel = () => {
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 500,
+    autoplaySpeed: 200,
     pauseOnHover: true,
     responsive: [
       {
@@ -47,7 +47,7 @@ const Carousel = () => {
 
 
   return (
-    <div className="carousel-container" style={{border:"1px solid red"}}>
+    <div className="carousel-container" >
       <Slider {...settings}>
         <div className="slide">
         <img src={image1} alt="Food 1" />

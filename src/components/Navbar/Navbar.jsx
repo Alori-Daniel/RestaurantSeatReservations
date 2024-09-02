@@ -32,7 +32,7 @@ const Navbar = () => {
         
       </div>
       
-      <button onClick={()=> navigate('/book')} className='button-booknow btn-shine'>
+      <button onClick={()=>{ navigate('/book'), window.scroll(0,0)}} className='button-booknow btn-shine'>
         Book Now
       </button>
       <div>

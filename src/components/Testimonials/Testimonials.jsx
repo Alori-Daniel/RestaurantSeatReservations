@@ -31,7 +31,7 @@ const testimonialsData = [
 
 const Testimonials = () => {
   return (
-    <div className="testimonials-container" style={{border:"1px solid red"}} >
+    <div className="testimonials-container"  >
       <h1>What Our Guest Say</h1>
       <div className='testimonials ' >
         {testimonialsData.map((testimonial, i) =>{
