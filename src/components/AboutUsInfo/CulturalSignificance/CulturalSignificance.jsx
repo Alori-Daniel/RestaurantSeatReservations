@@ -4,7 +4,14 @@ import leafIcon from '../../../assets/signifi.png';
 
 const CulturalSignificance = () => {
   return (
+<<<<<<< HEAD
     <div className='cultural-significance' style={{backgroundColor:"white", border:"1px solid red"}}>
+=======
+    <>
+    <br/>
+    <br/>
+    <br/>
+>>>>>>> c1748cc019dab24270e1f2b5cc159dd9190fcdde
       <div className="title-section">
         <img src={leafIcon} alt="Decorative Leaf" className="decorative-icon" />
        

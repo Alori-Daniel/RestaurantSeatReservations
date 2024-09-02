@@ -6,16 +6,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
+<<<<<<< HEAD
     /* margin-bottom: 20px;
      */
      /* margin-top: 8rem; */
+=======
+     margin-top: 8rem;
+>>>>>>> c1748cc019dab24270e1f2b5cc159dd9190fcdde
   }
   
   .decorative-icon {
     width: 400px; 
     margin: 0 10px;
-    /* mar  */
-
   }
   
 
@@ -31,12 +33,15 @@
     text-align: center;
   }
   
-  @media (max-width: 767px) {
-    .decorative-icon {
-        width: 300px; 
-        margin: 0 10px;
-        /* mar  */
-    
-   }
+  @media  (max-width: 482px){
+
+  }
+.decorative-icon{
+  width: 15rem;
 }
-  
+
+  @media (min-width: 483px) and (max-width: 609px) {
+body{
+  margin-top: 4rem;
+}
+  }

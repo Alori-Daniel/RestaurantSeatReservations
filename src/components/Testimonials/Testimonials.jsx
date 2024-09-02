@@ -8,7 +8,7 @@ import quote from '../../assets/quote.png';
 const testimonialsData = [
   {
     text: "A true gem in the heart of the city! The moment I stepped in, I felt like I was transported to Africa. The Jollof Rice was perfectly spiced, and the ambiance made it a dining experience I'll never forget.",
-    name: "Chinedu O.",
+    name: "Chike O.",
     role: "Manager",
     rating: 5,
     image: user1
