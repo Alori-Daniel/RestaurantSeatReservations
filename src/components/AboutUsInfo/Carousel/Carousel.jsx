@@ -47,7 +47,7 @@ const Carousel = () => {
 
 
   return (
-    <div className="carousel-container">
+    <div className="carousel-container" style={{border:"1px solid red"}}>
       <Slider {...settings}>
         <div className="slide">
         <img src={image1} alt="Food 1" />

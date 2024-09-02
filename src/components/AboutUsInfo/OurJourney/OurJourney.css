@@ -5,11 +5,10 @@
   justify-content: center;
   padding: 40px 20px;
   position: relative; /* To position the leaf image */
-  background-color: #F3FAF5;
+  background-color: #ffffff;
   width: 100%;
   /* max-width: 1200px; */
   /* margin: 0 auto; */
-  margin-top: 7rem;
   /* border: 2px solid yellow; */
 
 }
@@ -32,8 +31,9 @@
 }
 
 .text-section {
-  flex: 1;
-  text-align: left;
+  /* flex: 1; */
+  max-width: 800px;
+  /* text-align: left; */
   margin-left: 4.5rem;
 }
 
@@ -48,130 +48,59 @@
   font-size: 16px;
   line-height: 1.6;
   color: #555;
-  max-width: 70%;
+  max-width: 500px;
 }
 
 .image-section {
-  flex: 1;
+  /* flex: 1; */
+  border: 1px solid green;
   display: flex;
   justify-content: center;
 }
 
 .journey-image {
-  width: 100%;
-  height: auto;
+  
   max-width: 500px;
   border-radius: 8px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 
-@media (min-width: 483px) and (max-width: 900px) {
-
-  .our-journey-container{
-    width: 100vw;
-    margin-top: 7rem;
-    display: flex;
-  }
-  .leaf-decor {
-    left: -1rem;
-  }
-
-  .section-title {
-    font-size: 1.5rem;
-    margin-top: 2rem;
-  }
-
-  .section-text {
-    font-size: 0.9rem;
-    line-height: 1.5;
-    max-width: 100%;
-    margin-left: -3rem;
-
-    
-  }
-
-  .text-section{
-    max-width: 100%;
-  
-  }
-
-  .content{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .journey-image{
-    margin-top: 1rem;
-    height: 300px;
-    width: 350px;
-  }
-
-}
-
-
-
-
-@media (min-width: 901px) and (max-width: 1179px) {
-
-}
-
-
-
-
-@media  (max-width: 482px){
-  .section-title {
-    margin-top: 3rem;
-    font-size: 1.5rem;
-  }
-
-  .section-text {
-    font-size: 0.9rem;
-    line-height: 1.5;
-    max-width: 100%;
-    margin-left: -3rem;
-
-    
-  }
-
-  .text-section{
-    max-width: 100%;
-  
-  }
-
-  .content{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .journey-image{
-    margin-top: 1rem;
-    height: 300px;
-    width: 350px;
-  }
-
-  .leaf-decor{
- 
-    width: 15rem;
-  }
-
-
-}
-
-
-/* @media (max-width: 768px) {
+@media screen and (max-width:1130px) {
   .content {
     flex-direction: column; 
     text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid green;
     gap: 30px;
   }
 
   .text-section {
-    text-align: center;
+    text-align: justify;
     margin-left: 0; 
     padding: 0 20px; 
+    border: 1px solid pink;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  .content {
+  
+    border: 1px solid green;
+    gap: 30px;
+  }
+
+  .text-section {
+    text-align: justify;
+    margin-left: 0; 
+    padding: 0 20px; 
+    border: 1px solid pink;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .leaf-decor {
@@ -192,7 +121,7 @@
 @media (max-width: 480px) {
 
   .our-journey-container{
-    width: 100vw;
+    /* width: 100vw; */
     margin-top: -3rem;
   }
   .leaf-decor {
@@ -212,4 +141,4 @@
   .journey-image {
     max-width: 200px; 
   }
-} */
+} 

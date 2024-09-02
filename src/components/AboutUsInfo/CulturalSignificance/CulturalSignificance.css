@@ -1,12 +1,14 @@
-
-  body{
-    background-color: #ffff;
+  .cultural-significance{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
   .title-section {
     display: flex;
     align-items: center;
     justify-content: center;
-     margin-top: 8rem;
+    /* margin-bottom: 20px;
+     */
+     /* margin-top: 8rem; */
   }
   
   .decorative-icon {
