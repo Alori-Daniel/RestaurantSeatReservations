@@ -1,6 +1,6 @@
-
-  body{
-    background-color: #ffff;
+  .cultural-significance{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
   .title-section {
     display: flex;
@@ -8,7 +8,7 @@
     justify-content: center;
     /* margin-bottom: 20px;
      */
-     margin-top: 8rem;
+     /* margin-top: 8rem; */
   }
   
   .decorative-icon {

@@ -25,7 +25,7 @@ const ReserveTable = () => {
   }, []);
 
   return (
-    <div className="reserve-container" style={{ marginTop: "5rem" }}>
+    <div className="reserve-container" style={{ marginTop: "5rem", border:"1px solid green" }}>
       <div className="text-container">
         <h2 className="reserve-title">Reserve Your Table</h2>
         <h3 className="subtitle">We look forward to welcoming you!</h3>
@@ -37,7 +37,7 @@ const ReserveTable = () => {
       <div className="graphic-container">
       
         <div className="circle">
-          <img src={isSmallScreen ? imageSmall : imageLarge} alt="Reserve Table" />
+          <img src={isSmallScreen ? imageSmall : imageLarge} style={{border:"1px solid green", display:"none"}} alt="Reserve Table" />
         </div>
       </div>
     </div>

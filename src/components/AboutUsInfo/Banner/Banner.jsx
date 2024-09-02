@@ -7,7 +7,7 @@ const Banner = () => {
   return (
     <div className="banner">
       <div className="banner-content">
-        <h1 className="banner-title">Crisp & <pre/> Crave</h1>
+        <h1 className="banner-title">Crisp &  Crave</h1>
         <p className="banner-text" >Discover the passion behind our authentic African flavors</p>
       </div>
       <div className="banner-decorations">
