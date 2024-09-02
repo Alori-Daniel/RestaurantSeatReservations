@@ -90,20 +90,15 @@ body {
     margin: 0 auto;
     
     background-color: #ffff;
-<<<<<<< HEAD
     /* margin-bottom: 4rem; */
     /* padding-left: 0.5px; */
-=======
-    margin-bottom: 4rem;
   
->>>>>>> c1748cc019dab24270e1f2b5cc159dd9190fcdde
-  }
 
   .slide img {
     height: 250px;
     object-fit: cover; 
   }
-}
+
 
 @media (max-width: 480px) {
   .carousel-container {
@@ -115,4 +110,4 @@ body {
     height: 200px;
     object-fit: cover; 
   }
-} */
+} 
