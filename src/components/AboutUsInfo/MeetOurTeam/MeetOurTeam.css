@@ -78,10 +78,7 @@
   }
 
   @media (min-width: 768px) and (max-width: 1113px) {
-    .team-container{
-        /* overflow: hidden;
-        overflow-x: hidden; */
-    }
+  
     .team-title {
         font-size: 20px; 
       }
@@ -96,12 +93,7 @@
         max-width: none;
     }
   
-    .vine-decor {
-      /* width: 42%;
-      top: 65%;
-     left: -17rem; */
-     
-    }
+  
   
     .vine-image {
       max-width: 250px;
