@@ -11,8 +11,8 @@ const Banner = () => {
         <p className="banner-text" >Discover the passion behind our authentic African flavors</p>
       </div>
       <div className="banner-decorations">
-        <img src={image1} alt="Left leaf decoration" className="leaf-decoration left" />
-        <img src={image2} alt="Right leaf decoration" className="leaf-decoration right"/>
+        <img loading="lazy" src={image1} alt="Left leaf decoration" className="leaf-decoration left" />
+        <img loading="lazy" src={image2} alt="Right leaf decoration" className="leaf-decoration right"/>
       </div>
     </div>
   );

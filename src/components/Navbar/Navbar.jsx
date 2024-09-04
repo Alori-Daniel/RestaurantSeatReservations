@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <div className='navbar'>
       <div className='logo'>
-        <img src={crisp} alt="" className='image-logo' />
+        <img loading="lazy" src={crisp} alt="" className='image-logo' />
       <h2>Crisp <br /> & Crave</h2>
       </div>
       <div className='ul-links'>

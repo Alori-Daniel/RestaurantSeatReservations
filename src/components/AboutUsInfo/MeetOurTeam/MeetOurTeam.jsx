@@ -11,17 +11,16 @@ const MeetOurTeam = () => {
       <h2 className="team-title">Meet Our Team</h2>
       <div className="team-members">
         <div className="team-member">
-          <img src={teamMember1} alt="Team Member 1" className="team-member-image" />
+          <img  loading="lazy" src={teamMember1} alt="Team Member 1" className="team-member-image" />
         </div>
         <div className="team-member">
-          <img src={teamMember2} alt="Team Member 2" className="team-member-image" />
+          <img loading="lazy" src={teamMember2} alt="Team Member 2" className="team-member-image" />
         </div>
         <div className="team-member">
-          <img src={teamMember3} alt="Team Member 3" className="team-member-image" />
+          <img  loading="lazy"src={teamMember3} alt="Team Member 3" className="team-member-image" />
         </div>
       </div>
-      
-        <img src={vines} alt="Green vines" className="vine-image" />
+        <img  loading="lazy"src={vines} alt="Green vines" className="vine-image" />
         
     </div>
   );

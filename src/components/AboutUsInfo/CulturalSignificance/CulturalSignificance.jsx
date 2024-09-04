@@ -6,7 +6,7 @@ const CulturalSignificance = () => {
   return (
     <div className='cultural-significance' style={{backgroundColor:"white"}}>
       <div className="title-section">
-        <img src={leafIcon} alt="Decorative Leaf" className="decorative-icon" />
+        <img loading="lazy" src={leafIcon} alt="Decorative Leaf" className="decorative-icon" />
        
       </div>
       <p className="description">

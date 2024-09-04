@@ -37,11 +37,11 @@ const Testimonials = () => {
         {testimonialsData.map((testimonial, i) =>{
           return(
             <div className='testimonial-card' key={i}>
-              <img src={quote}  className='testimonial-quote'alt="" />
+              <img loading="lazy" src={quote}  className='testimonial-quote'alt="" />
               <p style={{maxWidth:"380px", textAlign:"justify"}}>{testimonial.text}</p>
               <div style={{display:"flex", marginTop:"2rem", justifyContent:"space-between"}}>
                 <div style={{display:"flex", alignItems:"flex-start", gap:"0.2rem"}}>
-              <img src={testimonial.image} className='testimonial-img' alt="" />
+              <img loading="lazy" src={testimonial.image} className='testimonial-img' alt="" />
                 <p>{testimonial.name}</p>
                 </div>
                 <div className="rating" style={{alignSelf:"end"}}>

@@ -16,7 +16,7 @@ const OurCommunity = () => {
       <div className="image-background">
           {/* <img src={white} alt="Background" className="background-image" /> */}
         </div>
-        <img src={communityImage} alt="Community Gathering" className="community-image" />
+        <img loading="lazy" src={communityImage} alt="Community Gathering" className="community-image" />
       </div>
     </div>
   );

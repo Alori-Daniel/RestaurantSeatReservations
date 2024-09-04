@@ -85,7 +85,7 @@ const TableSelection = () => {
             <p className='p-modal'>check the summary to review your reservation details</p>
             <div className='customer-details'>
                     <div className='logo'>
-                        <img src={crisp} alt="" className='image-logo' />
+                        <img loading="lazy" src={crisp} alt="" className='image-logo' />
                         <h3 >Crisp <br /> & Crave</h3>
                      </div>
             <div className='detail'>

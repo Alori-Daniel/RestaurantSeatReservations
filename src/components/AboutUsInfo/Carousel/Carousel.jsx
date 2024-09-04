@@ -53,25 +53,25 @@ const Carousel = () => {
         <img src={image1} alt="Food 1" />
         </div>
         <div className="slide">
-          <img src={image2} alt="Food 2" />
+          <img loading="lazy" src={image2} alt="Food 2" />
         </div>
         <div className="slide">
-          <img src={image3} alt="Food 3" />
+          <img loading="lazy" src={image3} alt="Food 3" />
         </div>
         <div className="slide">
-          <img src={image4} alt="Food 4" />
+          <img loading="lazy" src={image4} alt="Food 4" />
         </div>
         <div className="slide">
-          <img src={image5} alt="Food 5" />
+          <img loading="lazy" src={image5} alt="Food 5" />
         </div>
         <div className="slide">
-          <img src={image6} alt="Food 6" />
+          <img loading="lazy" src={image6} alt="Food 6" />
         </div>
         <div className="slide">
-          <img src={image7} alt="Food 7" />
+          <img loading="lazy" src={image7} alt="Food 7" />
         </div>
         <div className="slide">
-          <img src={image8} alt="Food 8" />
+          <img loading="lazy" src={image8} alt="Food 8" />
         </div>
         {/* <div className="slide">
           <img src={image9} alt="Food 9" />

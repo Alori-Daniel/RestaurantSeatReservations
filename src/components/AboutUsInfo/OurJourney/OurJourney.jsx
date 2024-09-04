@@ -7,7 +7,7 @@ const OurJourney = () => {
   return (
     
     <div className="our-journey-container" >
-      <img src={leafImage} alt="Decorative Leaf" className="leaf-decor" />
+      <img loading="lazy" src={leafImage} alt="Decorative Leaf" className="leaf-decor" />
       <div className="content">
         <div className="text-section">
           <h2 className="section-title">Our Journey</h2>
@@ -16,7 +16,7 @@ const OurJourney = () => {
           </p>
         </div>
         <div className="image-section">
-          <img src={journeyImage} alt="Restaurant Interior" className="journey-image" />
+          <img loading="lazy" src={journeyImage} alt="Restaurant Interior" className="journey-image" />
         </div>
       </div>
     </div>

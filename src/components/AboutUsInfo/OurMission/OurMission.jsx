@@ -7,7 +7,7 @@ const OurMission = () => {
   return (
     <div className="our-mission-container">
       <div className="top-image">
-        <img src={topImage} alt="Top Decorative" />
+        <img loading="lazy" src={topImage} alt="Top Decorative" />
       </div>
       <div className="content-container">
         <h2 className="mission-title">Our Mission</h2>
@@ -16,7 +16,7 @@ const OurMission = () => {
         </p>
       </div>
       <div className="bottom-image">
-        <img src={bottomImage} alt="Bottom Decorative" />
+        <img loading="lazy" src={bottomImage} alt="Bottom Decorative" />
       </div>
     </div>
   );

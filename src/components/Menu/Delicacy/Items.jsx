@@ -7,7 +7,7 @@ const Items = (props) => {
     <div className='item'>
         <div className='image-container'>
         <div className="shadow-overlay"></div>
-            <img src={props.img} alt="" />
+            <img loading="lazy" src={props.img} alt="" />
             <div className='info-section'>
                 <p>{props.description}</p>
             </div>

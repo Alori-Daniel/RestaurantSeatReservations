@@ -37,7 +37,7 @@ const ReserveTable = () => {
       <div className="graphic-container">
       
         <div className="circle">
-          <img src={isSmallScreen ? imageSmall : imageLarge} style={{ display:"none"}} alt="Reserve Table" />
+          <img loading="lazy" src={isSmallScreen ? imageSmall : imageLarge} style={{ display:"none"}} alt="Reserve Table" />
         </div>
       </div>
     </div>
