@@ -1,6 +1,6 @@
 import React from 'react';
 import './OurJourney.css';  
-import journeyImage from '../../../assets/journey.png';
+import journeyImage from '../../../assets/journey.jpg';
 import leafImage from '../../../assets/journeyleaf.png';
 
 const OurJourney = () => {

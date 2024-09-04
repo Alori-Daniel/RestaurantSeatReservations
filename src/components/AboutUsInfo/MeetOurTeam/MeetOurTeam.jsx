@@ -1,8 +1,8 @@
 import React from 'react';
 import './MeetOurTeam.css'; 
-import teamMember1 from '../../../assets/team1.png';
-import teamMember2 from '../../../assets/team2.png';  
-import teamMember3 from '../../../assets/team3.png'; 
+import teamMember1 from '../../../assets/team1.jpg';
+import teamMember2 from '../../../assets/team2.jpg';  
+import teamMember3 from '../../../assets/team3.jpg'; 
 import vines from '../../../assets/Green Vines.png'; 
 
 const MeetOurTeam = () => {

@@ -1,7 +1,7 @@
 import React from 'react';
 import './OurMission.css'; 
-import topImage from '../../../assets/mission1.png';  
-import bottomImage from '../../../assets/mission2.png';
+import topImage from '../../../assets/mission1.jpg';  
+import bottomImage from '../../../assets/mission2.jpg';
 
 const OurMission = () => {
   return (

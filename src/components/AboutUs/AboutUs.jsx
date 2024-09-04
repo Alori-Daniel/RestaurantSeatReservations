@@ -1,8 +1,8 @@
 import React from 'react'
 import './aboutus.css'
-import interior from '../../assets/interior.png'
-import chef from '../../assets/chef.png'
-import kitchen from '../../assets/kitchen.png'
+import interior from '../../assets/interior.jpg'
+import chef from '../../assets/chef.jpg'
+import kitchen from '../../assets/kitchen.jpg'
 
 const AboutUs = () => {
     // style={{margin:"2rem 6rem 2rem 6rem", border:"1px solid red", display:"flex", flexDirection:"column", alignItems:"center"}} 

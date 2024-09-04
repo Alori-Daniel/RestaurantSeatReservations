@@ -1,14 +1,14 @@
 import React from 'react';
 import Slider from 'react-slick';
 import './Carousel.css'; 
-import image1 from '../../../assets/food1.png';
-import image2 from '../../../assets/food2.png';
-import image3 from '../../../assets/food3.png';
-import image4 from '../../../assets/food4.png';
-import image5 from '../../../assets/food5.png';
-import image6 from '../../../assets/food6.png';
-import image7 from '../../../assets/food7.png';
-import image8 from '../../../assets/food8.png';
+import image1 from '../../../assets/food1.jpg';
+import image2 from '../../../assets/food2.jpg';
+import image3 from '../../../assets/food3.jpg';
+import image4 from '../../../assets/food4.jpg';
+import image5 from '../../../assets/food5.jpg';
+import image6 from '../../../assets/food6.jpg';
+import image7 from '../../../assets/food7.jpg';
+import image8 from '../../../assets/food8.jpg';
 
 const Carousel = () => {
   const settings = {

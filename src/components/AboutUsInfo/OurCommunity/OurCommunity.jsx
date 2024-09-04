@@ -1,6 +1,6 @@
 import React from 'react';
 import './OurCommunity.css';  
-import communityImage from '../../../assets/community.png'; 
+import communityImage from '../../../assets/community.jpg'; 
 import white from '../../../assets/white.png'; 
 const OurCommunity = () => {
   return (

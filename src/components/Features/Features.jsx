@@ -1,8 +1,8 @@
 import React from 'react';
 import './feature.css';
-import image1 from '../../assets/Frame 15.png';
-import image2 from '../../assets/Frame 16.png';
-import image3 from '../../assets/Frame 17.png';
+import image1 from '../../assets/Frame 15.jpg';
+import image2 from '../../assets/Frame 16.jpg';
+import image3 from '../../assets/Frame 17.jpg';
 
 const Features = () => {
   return (
